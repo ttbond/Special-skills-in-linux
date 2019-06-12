@@ -1,0 +1,10 @@
+Sub Main()
+    On Error Resume Next
+    Dim tmpShape As Shape, tmpSlide As Slide
+    For Each tmpSlide In ActivePresentation.Slides
+        For Each tmpShape In tmpSlide.Shapes
+            Debug.Print tmpShape.TextFrame.TextRange.Text
+        Next tmpShape
+    Next tmpSlide
+    temp.Application.Visible = True
+End Sub
