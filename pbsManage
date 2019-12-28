@@ -1,0 +1,6 @@
+#nodes down
+ssh cu01
+df -h //check storage
+service pbs_mom status //check pbs is activate
+service pbs_mom restart //restart pbs service, with task
+reboot //if no task
